@@ -1,6 +1,5 @@
 import time 
 import random
-
 p1=input("Enter p1 name:")
 p2=input("Enter p2 name:")
 print("Hello {} and {}".format(p1,p2))
