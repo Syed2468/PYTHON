@@ -1,23 +1,23 @@
-class sim:
-    def dim(self,a,b):
-        self.a=a
-        self.b=b
+class rect():
+    def set_dim(self,w,h):
+        self.w=w
+        self.h=h
     def area(self):
-        print(self.a*self.b)
+        print(self.w*self.h)
     def peri(self):
-        print(self.a+self.b)
-    
+        print(self.w+self.h)
 l=[]
-n=int(input("Enter the number of rectangles :"))
-for i  in range(n):
-    r=sim()
-    a=int(input("Enter the width {}".format(i+1)))
-    b=int(input("Enter the length {}".format(i+1)))
-    r.dim(a,b)
-    l.append(r)
+n=int(input("Enter the number of rectangles:"))
 for i in range(n):
-    print("RECTANLE NO. ",i+1)
+    r=rect()
+    w=int(input("Enter the width of the rectangle".format(i+1)))
+    h=int(input("Enter the height of the rectangle".format(i+1)))
+    r.set_dim(w,h)
+    l.append(r)
+    
+for i in range(n):
+    print("Rectangle NO{}".format(i+1))
     l[i].area()
     l[i].peri()
-    
-    
+    print("---------")
+print(i)
